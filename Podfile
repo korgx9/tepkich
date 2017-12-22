@@ -6,10 +6,10 @@ target 'Tepkich' do
   use_frameworks!
 
   # Pods for Tepkich
-    pod 'ObjectMapper', '~> 2.2'
+    pod 'ObjectMapper', '~> 3.1.0'
     pod 'SideMenu'
     pod 'DZNEmptyDataSet'
-    pod 'ImageSlideshow', '~> 1.3.1'
+    pod 'ImageSlideshow', '~> 1.4'
     pod 'Firebase/Database'
 
   target 'TepkichTests' do
