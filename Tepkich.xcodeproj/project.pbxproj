@@ -15,6 +15,7 @@
 		6FDBD7641FECC68C00FB8197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FDBD7621FECC68C00FB8197 /* LaunchScreen.storyboard */; };
 		6FDBD76F1FECC68C00FB8197 /* TepkichTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDBD76E1FECC68C00FB8197 /* TepkichTests.swift */; };
 		6FDBD77A1FECC68C00FB8197 /* TepkichUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDBD7791FECC68C00FB8197 /* TepkichUITests.swift */; };
+		6FFCB3531FF55ADB00811093 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FFCB3521FF55ADB00811093 /* GoogleService-Info.plist */; };
 		76DCB579EFBBB0225E90641E /* Pods_Tepkich.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F7DCD5A329420B0C69F4D8 /* Pods_Tepkich.framework */; };
 		7D7FB15413C390E3C0FAFE06 /* Pods_TepkichTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BA10614CD903A6B436A995 /* Pods_TepkichTests.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		6FDBD7751FECC68C00FB8197 /* TepkichUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TepkichUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FDBD7791FECC68C00FB8197 /* TepkichUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TepkichUITests.swift; sourceTree = "<group>"; };
 		6FDBD77B1FECC68C00FB8197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FFCB3521FF55ADB00811093 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9B5C4BDFC61F5A2CD3F5D409 /* Pods-TepkichTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TepkichTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TepkichTests/Pods-TepkichTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A5BA10614CD903A6B436A995 /* Pods_TepkichTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TepkichTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C72D540D1816E5C7A5242567 /* Pods-TepkichUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TepkichUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TepkichUITests/Pods-TepkichUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		6FDBD7581FECC68B00FB8197 /* Tepkich */ = {
 			isa = PBXGroup;
 			children = (
+				6FFCB3521FF55ADB00811093 /* GoogleService-Info.plist */,
 				6FDBD7591FECC68B00FB8197 /* AppDelegate.swift */,
 				6FDBD75B1FECC68B00FB8197 /* ViewController.swift */,
 				6FDBD75D1FECC68C00FB8197 /* Main.storyboard */,
@@ -281,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FFCB3531FF55ADB00811093 /* GoogleService-Info.plist in Resources */,
 				6FDBD7641FECC68C00FB8197 /* LaunchScreen.storyboard in Resources */,
 				6FDBD7611FECC68C00FB8197 /* Assets.xcassets in Resources */,
 				6FDBD75F1FECC68C00FB8197 /* Main.storyboard in Resources */,

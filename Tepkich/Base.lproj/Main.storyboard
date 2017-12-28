@@ -122,6 +122,7 @@
                                                 <constraint firstItem="0Xv-GO-rr9" firstAttribute="leading" secondItem="45U-DZ-n2X" secondAttribute="trailing" constant="20" id="XeQ-gU-Xpy"/>
                                                 <constraint firstItem="0Xv-GO-rr9" firstAttribute="centerY" secondItem="G5f-Ji-Aje" secondAttribute="centerY" id="adm-1K-G8Y"/>
                                                 <constraint firstItem="45U-DZ-n2X" firstAttribute="top" secondItem="G5f-Ji-Aje" secondAttribute="top" id="ef5-5T-vOv"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0Xv-GO-rr9" secondAttribute="trailing" constant="20" symbolic="YES" id="zJk-cu-t2l"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="2000" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -149,6 +150,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Ucn-Ps-C2g" firstAttribute="centerY" secondItem="0B5-xE-Gcr" secondAttribute="centerY" id="Qp4-NJ-Bea"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="maQ-sG-Al1" secondAttribute="trailing" constant="20" symbolic="YES" id="j2k-X5-uUv"/>
                                                 <constraint firstItem="Ucn-Ps-C2g" firstAttribute="leading" secondItem="0B5-xE-Gcr" secondAttribute="leading" constant="16" id="nD7-CO-HfC"/>
                                                 <constraint firstItem="maQ-sG-Al1" firstAttribute="centerY" secondItem="0B5-xE-Gcr" secondAttribute="centerY" id="tqR-mt-Fd0"/>
                                                 <constraint firstItem="maQ-sG-Al1" firstAttribute="leading" secondItem="Ucn-Ps-C2g" secondAttribute="trailing" constant="20" id="yAC-Se-dKY"/>
@@ -186,9 +188,11 @@
                                             <constraints>
                                                 <constraint firstItem="eQY-Hr-bht" firstAttribute="top" secondItem="Dzo-Ye-x1s" secondAttribute="bottom" constant="15" id="2hg-sP-WRh"/>
                                                 <constraint firstItem="Dzo-Ye-x1s" firstAttribute="top" secondItem="j9a-Ox-hdg" secondAttribute="top" constant="15" id="2yX-sx-cbY"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AEB-tE-2ZN" secondAttribute="trailing" constant="20" symbolic="YES" id="LLB-5Q-kcv"/>
                                                 <constraint firstItem="eQY-Hr-bht" firstAttribute="leading" secondItem="j9a-Ox-hdg" secondAttribute="leading" constant="16" id="WBE-Xj-r1y"/>
                                                 <constraint firstItem="AEB-tE-2ZN" firstAttribute="top" secondItem="j9a-Ox-hdg" secondAttribute="top" constant="60" id="eIh-jU-88i"/>
                                                 <constraint firstItem="Dzo-Ye-x1s" firstAttribute="leading" secondItem="j9a-Ox-hdg" secondAttribute="leading" constant="16" id="izd-gg-gBP"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Dzo-Ye-x1s" secondAttribute="trailing" constant="20" symbolic="YES" id="r1P-32-BWv"/>
                                                 <constraint firstItem="AEB-tE-2ZN" firstAttribute="leading" secondItem="eQY-Hr-bht" secondAttribute="trailing" constant="20" id="wAl-jo-vgu"/>
                                             </constraints>
                                         </tableViewCellContentView>
