@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        removeBackButtonTextInChildsVC()
+        
         ref = Database.database().reference()
         
         let categoriesRef = ref.child(dbReferences.categories.rawValue)

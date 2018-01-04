@@ -65,11 +65,11 @@
             </objects>
             <point key="canvasLocation" x="-392" y="134"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Side Menu Table View Controller-->
         <scene sceneID="elC-MY-Gny">
             <objects>
-                <tableViewController id="qSY-TG-j4c" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Kja-yC-Iv7">
+                <tableViewController storyboardIdentifier="SideMenuTableViewController" id="qSY-TG-j4c" customClass="SideMenuTableViewController" customModule="Tepkich" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Kja-yC-Iv7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -127,7 +127,7 @@
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="2000" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
-                                            <segue destination="7Sh-lA-ikv" kind="show" id="FMa-R5-aEJ"/>
+                                            <segue destination="7Sh-lA-ikv" kind="show" id="Rjx-Lb-CsU"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="V8W-Nz-zSd">
@@ -209,26 +209,108 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="gXC-bp-oAL"/>
-                    <nil key="simulatedTopBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JWo-zI-tqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="277.60000000000002" y="133.5832083958021"/>
         </scene>
-        <!--About Us View Controller-->
+        <!--О нас-->
         <scene sceneID="RcW-P5-hzy">
             <objects>
-                <viewController storyboardIdentifier="AboutUsViewController" id="7Sh-lA-ikv" customClass="AboutUsViewController" customModule="Tepkich" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutUsViewController" title="О нас" id="7Sh-lA-ikv" customClass="AboutUsViewController" customModule="Tepkich" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hBE-FK-v7p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Менеджер по работе с клиентами:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Js-b5-k9r">
+                                <rect key="frame" x="20" y="60" width="335" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.96862745098039216" green="0.59607843137254901" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLW-Vh-YBc">
+                                <rect key="frame" x="20" y="86" width="335" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="+996555555999 Болот">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="firstManagerPhoneButtonTapped:" destination="7Sh-lA-ikv" eventType="touchUpInside" id="0gh-CG-m9N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9o-fn-VCE">
+                                <rect key="frame" x="20" y="114" width="335" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="E-mail: koshoevbolot@gmail.com">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="firstManagerEmailButtonTapped:" destination="7Sh-lA-ikv" eventType="touchUpInside" id="nmE-Oh-PX2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Менеджер по работе с клиентами:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nks-hP-dcw">
+                                <rect key="frame" x="20" y="172" width="335" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.96862745098039216" green="0.59607843137254901" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0j-5R-Vzq">
+                                <rect key="frame" x="20" y="198" width="335" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="+996551900999 Искендер">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="secondManagerPhoneButtonTapped:" destination="7Sh-lA-ikv" eventType="touchUpInside" id="SaK-ml-EHe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eX-nH-TDZ">
+                                <rect key="frame" x="20" y="226" width="335" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="E-mail: iskender.esenbaev@gmail.com">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="secondManagerEmailButtonTapped:" destination="7Sh-lA-ikv" eventType="touchUpInside" id="44C-NQ-C50"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Адрес: Чуйская область, Ысык-Атинский район, с.Новопокровка, ул. Пушкина 36а" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsg-Lt-67P">
+                                <rect key="frame" x="20" y="284" width="335" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.96862745098039216" green="0.59607843137254901" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5Js-b5-k9r" firstAttribute="leading" secondItem="Y9F-hG-ILH" secondAttribute="leading" constant="20" id="5Bh-cg-FOn"/>
+                            <constraint firstItem="Y9F-hG-ILH" firstAttribute="trailing" secondItem="0eX-nH-TDZ" secondAttribute="trailing" constant="20" id="H3Q-Kb-34v"/>
+                            <constraint firstItem="0eX-nH-TDZ" firstAttribute="top" secondItem="V0j-5R-Vzq" secondAttribute="bottom" id="HGH-Ye-mXS"/>
+                            <constraint firstItem="nks-hP-dcw" firstAttribute="leading" secondItem="Y9F-hG-ILH" secondAttribute="leading" constant="20" id="I8c-JJ-m4L"/>
+                            <constraint firstItem="Y9F-hG-ILH" firstAttribute="trailing" secondItem="Qsg-Lt-67P" secondAttribute="trailing" constant="20" id="Mn4-CT-qYv"/>
+                            <constraint firstItem="Y9o-fn-VCE" firstAttribute="leading" secondItem="Y9F-hG-ILH" secondAttribute="leading" constant="20" id="Qfl-ys-4PT"/>
+                            <constraint firstItem="Y9F-hG-ILH" firstAttribute="trailing" secondItem="CLW-Vh-YBc" secondAttribute="trailing" constant="20" id="WDV-eE-Laz"/>
+                            <constraint firstItem="Y9F-hG-ILH" firstAttribute="trailing" secondItem="nks-hP-dcw" secondAttribute="trailing" constant="20" id="ZFg-CH-blw"/>
+                            <constraint firstItem="5Js-b5-k9r" firstAttribute="top" secondItem="Y9F-hG-ILH" secondAttribute="top" constant="40" id="Zpg-wc-k0d"/>
+                            <constraint firstItem="Qsg-Lt-67P" firstAttribute="top" secondItem="0eX-nH-TDZ" secondAttribute="bottom" constant="30" id="a3A-Lz-FfQ"/>
+                            <constraint firstItem="V0j-5R-Vzq" firstAttribute="top" secondItem="nks-hP-dcw" secondAttribute="bottom" constant="8" id="b6y-am-Y2w"/>
+                            <constraint firstItem="Y9o-fn-VCE" firstAttribute="top" secondItem="CLW-Vh-YBc" secondAttribute="bottom" id="chx-0c-ntM"/>
+                            <constraint firstItem="Qsg-Lt-67P" firstAttribute="leading" secondItem="Y9F-hG-ILH" secondAttribute="leading" constant="20" id="eSB-Jj-bZ7"/>
+                            <constraint firstItem="0eX-nH-TDZ" firstAttribute="leading" secondItem="Y9F-hG-ILH" secondAttribute="leading" constant="20" id="fMe-87-jEn"/>
+                            <constraint firstItem="Y9F-hG-ILH" firstAttribute="trailing" secondItem="Y9o-fn-VCE" secondAttribute="trailing" constant="20" id="miw-De-VT4"/>
+                            <constraint firstItem="CLW-Vh-YBc" firstAttribute="leading" secondItem="Y9F-hG-ILH" secondAttribute="leading" constant="20" id="nsX-uP-Vgg"/>
+                            <constraint firstItem="V0j-5R-Vzq" firstAttribute="leading" secondItem="Y9F-hG-ILH" secondAttribute="leading" constant="20" id="pOL-d2-Zcu"/>
+                            <constraint firstItem="nks-hP-dcw" firstAttribute="top" secondItem="Y9o-fn-VCE" secondAttribute="bottom" constant="30" id="qMr-Kh-dGy"/>
+                            <constraint firstItem="Y9F-hG-ILH" firstAttribute="trailing" secondItem="5Js-b5-k9r" secondAttribute="trailing" constant="20" id="vek-5a-xTY"/>
+                            <constraint firstItem="CLW-Vh-YBc" firstAttribute="top" secondItem="5Js-b5-k9r" secondAttribute="bottom" constant="8" id="vfk-Qn-E49"/>
+                            <constraint firstItem="Y9F-hG-ILH" firstAttribute="trailing" secondItem="V0j-5R-Vzq" secondAttribute="trailing" constant="20" id="zVW-p3-k0E"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Y9F-hG-ILH"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ve7-d1-huf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1001" y="134"/>
+            <point key="canvasLocation" x="1000.8" y="133.5832083958021"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aSA-1E-Qaa">
