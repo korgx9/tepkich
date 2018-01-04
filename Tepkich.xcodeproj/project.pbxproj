@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3B42E92BF3603179E04E5439 /* Pods_TepkichUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190A110CFD71572874131BF3 /* Pods_TepkichUITests.framework */; };
+		6F50A24B1FFE272D0097296B /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F50A24A1FFE272D0097296B /* AboutUsViewController.swift */; };
 		6FDBD75A1FECC68B00FB8197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDBD7591FECC68B00FB8197 /* AppDelegate.swift */; };
 		6FDBD75C1FECC68B00FB8197 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDBD75B1FECC68B00FB8197 /* ViewController.swift */; };
 		6FDBD75F1FECC68C00FB8197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FDBD75D1FECC68C00FB8197 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		190A110CFD71572874131BF3 /* Pods_TepkichUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TepkichUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B6D8720D73C4E345B17095 /* Pods-Tepkich.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tepkich.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tepkich/Pods-Tepkich.release.xcconfig"; sourceTree = "<group>"; };
 		50F7DCD5A329420B0C69F4D8 /* Pods_Tepkich.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tepkich.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F50A24A1FFE272D0097296B /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		6FDBD7561FECC68B00FB8197 /* Tepkich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tepkich.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FDBD7591FECC68B00FB8197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FDBD75B1FECC68B00FB8197 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,34 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6F50A2471FFE26CA0097296B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6FDBD75B1FECC68B00FB8197 /* ViewController.swift */,
+				6F50A24A1FFE272D0097296B /* AboutUsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6F50A2481FFE26D90097296B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6FDBD75D1FECC68C00FB8197 /* Main.storyboard */,
+				6FDBD7621FECC68C00FB8197 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6F50A2491FFE26F50097296B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6FFCB3521FF55ADB00811093 /* GoogleService-Info.plist */,
+				6FDBD7651FECC68C00FB8197 /* Info.plist */,
+				6FDBD7601FECC68C00FB8197 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		6FDBD74D1FECC68B00FB8197 = {
 			isa = PBXGroup;
 			children = (
@@ -129,13 +159,10 @@
 		6FDBD7581FECC68B00FB8197 /* Tepkich */ = {
 			isa = PBXGroup;
 			children = (
-				6FFCB3521FF55ADB00811093 /* GoogleService-Info.plist */,
 				6FDBD7591FECC68B00FB8197 /* AppDelegate.swift */,
-				6FDBD75B1FECC68B00FB8197 /* ViewController.swift */,
-				6FDBD75D1FECC68C00FB8197 /* Main.storyboard */,
-				6FDBD7601FECC68C00FB8197 /* Assets.xcassets */,
-				6FDBD7621FECC68C00FB8197 /* LaunchScreen.storyboard */,
-				6FDBD7651FECC68C00FB8197 /* Info.plist */,
+				6F50A2481FFE26D90097296B /* Views */,
+				6F50A2471FFE26CA0097296B /* Controllers */,
+				6F50A2491FFE26F50097296B /* Resources */,
 			);
 			path = Tepkich;
 			sourceTree = "<group>";
@@ -475,6 +502,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FDBD75C1FECC68B00FB8197 /* ViewController.swift in Sources */,
+				6F50A24B1FFE272D0097296B /* AboutUsViewController.swift in Sources */,
 				6FDBD75A1FECC68B00FB8197 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
