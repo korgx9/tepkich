@@ -22,6 +22,8 @@ class PortfolioSubCatDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = subCatitem.itemName
+        
         nameLabel.text = subCatitem.itemName
         priceLabel.text = subCatitem.itemPrice + " сом"
         detailsLabel.text = subCatitem.itemDescription

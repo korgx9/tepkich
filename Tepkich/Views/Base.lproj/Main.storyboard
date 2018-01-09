@@ -389,7 +389,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rwp-B3-0EY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1000.8" y="902.69865067466276"/>
+            <point key="canvasLocation" x="278" y="838"/>
         </scene>
         <!--Portfolio Details View Controller-->
         <scene sceneID="BVX-kA-JnL">
@@ -422,7 +422,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiB-Sh-39q">
-                                                    <rect key="frame" x="16" y="158" width="37" height="17"/>
+                                                    <rect key="frame" x="15" y="158" width="37" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -435,15 +435,15 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="uiB-Sh-39q" firstAttribute="leading" secondItem="sgh-ul-l10" secondAttribute="leading" constant="15" id="2Dr-q3-bqg"/>
                                                 <constraint firstAttribute="bottom" secondItem="YVD-TU-7hF" secondAttribute="bottom" id="G8a-gy-f2Y"/>
                                                 <constraint firstAttribute="bottom" secondItem="uiB-Sh-39q" secondAttribute="bottom" constant="4.5" id="Gdv-K7-J6b"/>
                                                 <constraint firstAttribute="bottom" secondItem="ef8-q6-gds" secondAttribute="bottom" constant="4.5" id="JyE-ya-mdl"/>
                                                 <constraint firstItem="YVD-TU-7hF" firstAttribute="top" secondItem="sgh-ul-l10" secondAttribute="top" id="QR1-Te-axX"/>
                                                 <constraint firstAttribute="trailing" secondItem="ef8-q6-gds" secondAttribute="trailing" constant="16" id="Ra7-cw-qy4"/>
-                                                <constraint firstItem="ef8-q6-gds" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uiB-Sh-39q" secondAttribute="trailing" constant="16" id="YNE-jV-fPG"/>
                                                 <constraint firstItem="YVD-TU-7hF" firstAttribute="leading" secondItem="sgh-ul-l10" secondAttribute="leading" id="Zrj-9c-WbY"/>
-                                                <constraint firstItem="uiB-Sh-39q" firstAttribute="leading" secondItem="sgh-ul-l10" secondAttribute="leading" constant="16" id="d6P-jq-R8n"/>
                                                 <constraint firstAttribute="trailing" secondItem="YVD-TU-7hF" secondAttribute="trailing" id="for-Pd-mzR"/>
+                                                <constraint firstItem="ef8-q6-gds" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uiB-Sh-39q" secondAttribute="trailing" priority="750" constant="24" id="sHG-1Q-6G8"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -471,14 +471,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oGO-lz-1de" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1725.5999999999999" y="902.69865067466276"/>
+            <point key="canvasLocation" x="1000.8" y="837.93103448275872"/>
         </scene>
         <!--Portfolio Sub Cat Details View Controller-->
         <scene sceneID="8c7-pt-0Iw">
             <objects>
                 <viewController storyboardIdentifier="PortfolioSubCatDetailsViewController" id="3kS-qF-cQP" customClass="PortfolioSubCatDetailsViewController" customModule="Tepkich" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EmL-Ew-rNz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Heh-dh-JRq" customClass="ImageSlideshow" customModule="ImageSlideshow">
@@ -533,6 +533,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YXm-sZ-urE"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="detailsLabel" destination="aGT-4B-FTT" id="cum-Ps-W9h"/>
                         <outlet property="imageSlideShowView" destination="Heh-dh-JRq" id="NpJ-1N-Kt8"/>
@@ -542,7 +544,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Wc-tB-gB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2536.8000000000002" y="902.69865067466276"/>
+            <point key="canvasLocation" x="1769" y="838"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aSA-1E-Qaa">
