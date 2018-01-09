@@ -6,11 +6,11 @@ target 'Tepkich' do
   use_frameworks!
 
   # Pods for Tepkich
-    pod 'ObjectMapper', '~> 3.1.0'
     pod 'SideMenu'
     pod 'DZNEmptyDataSet'
     pod 'ImageSlideshow', '~> 1.4'
     pod 'Firebase/Database'
+    pod 'SDWebImage', '~> 4.0'
 
   target 'TepkichTests' do
     inherit! :search_paths
