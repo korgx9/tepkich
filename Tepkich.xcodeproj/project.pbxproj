@@ -10,6 +10,10 @@
 		3B42E92BF3603179E04E5439 /* Pods_TepkichUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190A110CFD71572874131BF3 /* Pods_TepkichUITests.framework */; };
 		6F1162132004A588005AD705 /* CatItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1162122004A588005AD705 /* CatItemCollectionViewCell.swift */; };
 		6F1162152004A9A6005AD705 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1162142004A9A6005AD705 /* UIColor.swift */; };
+		6F11E75C2004B3CB00F473C8 /* PortfolioDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F11E75B2004B3CA00F473C8 /* PortfolioDetailsViewController.swift */; };
+		6F11E75E2004D95500F473C8 /* CatSubCatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F11E75D2004D95500F473C8 /* CatSubCatTableViewCell.swift */; };
+		6F11E7602004DE4300F473C8 /* SubCatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F11E75F2004DE4300F473C8 /* SubCatItem.swift */; };
+		6F11E7622004E3FA00F473C8 /* PortfolioSubCatDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F11E7612004E3FA00F473C8 /* PortfolioSubCatDetailsViewController.swift */; };
 		6F50A24B1FFE272D0097296B /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F50A24A1FFE272D0097296B /* AboutUsViewController.swift */; };
 		6F50A24D1FFE83950097296B /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F50A24C1FFE83950097296B /* SideMenuTableViewController.swift */; };
 		6F50A2501FFE85200097296B /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F50A24F1FFE85200097296B /* UIViewController.swift */; };
@@ -51,6 +55,10 @@
 		50F7DCD5A329420B0C69F4D8 /* Pods_Tepkich.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tepkich.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1162122004A588005AD705 /* CatItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		6F1162142004A9A6005AD705 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		6F11E75B2004B3CA00F473C8 /* PortfolioDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDetailsViewController.swift; sourceTree = "<group>"; };
+		6F11E75D2004D95500F473C8 /* CatSubCatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatSubCatTableViewCell.swift; sourceTree = "<group>"; };
+		6F11E75F2004DE4300F473C8 /* SubCatItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCatItem.swift; sourceTree = "<group>"; };
+		6F11E7612004E3FA00F473C8 /* PortfolioSubCatDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioSubCatDetailsViewController.swift; sourceTree = "<group>"; };
 		6F50A24A1FFE272D0097296B /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		6F50A24C1FFE83950097296B /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		6F50A24F1FFE85200097296B /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				6F1162122004A588005AD705 /* CatItemCollectionViewCell.swift */,
+				6F11E75D2004D95500F473C8 /* CatSubCatTableViewCell.swift */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -133,6 +142,8 @@
 				6F50A24A1FFE272D0097296B /* AboutUsViewController.swift */,
 				6F50A24C1FFE83950097296B /* SideMenuTableViewController.swift */,
 				6F50A2511FFE97250097296B /* PortfolioViewController.swift */,
+				6F11E75B2004B3CA00F473C8 /* PortfolioDetailsViewController.swift */,
+				6F11E7612004E3FA00F473C8 /* PortfolioSubCatDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -168,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				6F50A2541FFEAA1B0097296B /* CategoryItem.swift */,
+				6F11E75F2004DE4300F473C8 /* SubCatItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -543,10 +555,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F11E75E2004D95500F473C8 /* CatSubCatTableViewCell.swift in Sources */,
 				6F1162132004A588005AD705 /* CatItemCollectionViewCell.swift in Sources */,
 				6FDBD75C1FECC68B00FB8197 /* ViewController.swift in Sources */,
 				6F50A2521FFE97250097296B /* PortfolioViewController.swift in Sources */,
+				6F11E7622004E3FA00F473C8 /* PortfolioSubCatDetailsViewController.swift in Sources */,
+				6F11E7602004DE4300F473C8 /* SubCatItem.swift in Sources */,
 				6F50A24B1FFE272D0097296B /* AboutUsViewController.swift in Sources */,
+				6F11E75C2004B3CB00F473C8 /* PortfolioDetailsViewController.swift in Sources */,
 				6F1162152004A9A6005AD705 /* UIColor.swift in Sources */,
 				6F50A2551FFEAA1B0097296B /* CategoryItem.swift in Sources */,
 				6FDBD75A1FECC68B00FB8197 /* AppDelegate.swift in Sources */,

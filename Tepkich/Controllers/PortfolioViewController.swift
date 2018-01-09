@@ -17,7 +17,8 @@ class PortfolioViewController: UIViewController {
     private let viewTitle = NSLocalizedString("Портфолио", comment: "View title portfolio")
     private let reuseIdentifierCatItemCell = "CatItemCollectionViewCell"
     private let placeholderImage = #imageLiteral(resourceName: "image_placeholder")
-    
+    private let segueIdentifierCatDetails = "segueIdentifierCatDetails"
+
     private var ref: DatabaseReference!
     private var items = [CategoryItem]()
     
@@ -62,6 +63,14 @@ class PortfolioViewController: UIViewController {
         
         ref.removeAllObservers()
     }
+    
+    // MARK: - Navigation methods
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueIdentifierCatDetails {
+            let vc = segue.destination as! PortfolioDetailsViewController
+            vc.item = sender as! CategoryItem
+        }
+    }
 }
 
 extension PortfolioViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -78,7 +87,7 @@ extension PortfolioViewController: UICollectionViewDelegate, UICollectionViewDat
         cell.catNameLabel.text = cateItem.name
         cell.catImageView.sd_setImage(with: URL(string: cateItem.image),
                                       placeholderImage: placeholderImage,
-                                      options: .scaleDownLargeImages,
+                                      options: .retryFailed,
                                       completed: nil)
         
         return cell
@@ -87,7 +96,7 @@ extension PortfolioViewController: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let row = indexPath.row
         let cateItem = items[row]
-
+        performSegue(withIdentifier: segueIdentifierCatDetails, sender: cateItem)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

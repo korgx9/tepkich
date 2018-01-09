@@ -16,6 +16,8 @@ struct CategoryItem {
     var key = ""
     var ref: DatabaseReference?
     
+    init() {}
+    
     init(snapshot: DataSnapshot) {
         key = snapshot.key
         let snapshotValue = snapshot.value as! [String: Any]

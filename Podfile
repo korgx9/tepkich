@@ -10,7 +10,9 @@ target 'Tepkich' do
     pod 'DZNEmptyDataSet'
     pod 'ImageSlideshow', '~> 1.4'
     pod 'Firebase/Database'
-    pod 'SDWebImage', '~> 4.0'
+    pod 'SDWebImage', '~> 3.7'
+    pod 'ImageSlideshow', '~> 1.4'
+    pod 'ImageSlideshow/SDWebImage'
 
   target 'TepkichTests' do
     inherit! :search_paths
