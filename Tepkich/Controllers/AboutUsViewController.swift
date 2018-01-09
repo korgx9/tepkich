@@ -18,6 +18,7 @@ class AboutUsViewController: UIViewController {
     private let callActionTitle = NSLocalizedString("Позвонить", comment: "Alert action call")
     private let whatsUpActionTitle = NSLocalizedString("Написать в WhatsUp", comment: "Alert action whatsup")
     private let messageActionTitle = NSLocalizedString("Написать смс", comment: "Alert action sms")
+    private let cancelActionTitle = NSLocalizedString("Отмена", comment: "Alert action cancel")
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -57,10 +58,13 @@ class AboutUsViewController: UIViewController {
             self.open(scheme: sms)
         })
         
+        let cancelAction = UIAlertAction(title: cancelActionTitle, style: .cancel, handler: nil)
+        
         alert.addAction(callAction)
         alert.addAction(whatsAppAction)
         alert.addAction(messageAction)
-        
+        alert.addAction(cancelAction)
+
         navigationController?.present(alert, animated: true, completion: nil)
     }
  
