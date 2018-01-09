@@ -32,6 +32,8 @@ class PortfolioDetailsViewController: UIViewController {
         super.viewDidLoad()
         title = viewTitle
         
+        removeBackButtonTextInChildsVC()
+        
         tableView.delegate = self
         tableView.dataSource = self
         
